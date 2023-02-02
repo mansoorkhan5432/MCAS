@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/dataTables.bootstrap4.min.css">
+</head>
+<body>
+
+    <!-- customer info start -->
+    <div style="width: 1000px; margin: 80px 50px 50px auto"> 
+        <h4 style="background-color: yellow; text-align: center; padding: 10px;">CUSTOMER INFO FORM</h4>
+        <form action="">
+
+            <!-- customer info top start  -->
+            <div style="display: flex;">
+
+                <!-- customer info top left side  -->
+                <div style="padding: 10px; background-color: rgb(152, 255, 152); width: 60%;">
+                    <div style="display: flex;">
+                        <div>
+                            <label for="code" style="width: 56px; font-weight: bold;">Code</label>
+                            <input type="number" id="code">
+                        </div>
+                        <div style="margin-left: 50px;">
+                            <label for="date" style="width: 56px; font-weight: bold;">Date</label>
+                            <input type="date" id="date" style="margin-left: 77px;">
+                        </div>
+                    </div>
+        
+                    <div style="display: flex; margin-bottom: 5px;">
+                        <label for="name" style="width: 60px; font-weight: bold;">Name</label>
+                        <input type="text" id="name" style="width: 90%; margin-left: auto;">
+                    </div>
+        
+                    <div style="display: flex;">
+                        <div>
+                            <label for="phone" style="width: 56px; font-weight: bold;">Phone</label>
+                            <input type="number" id="phone" style="margin-left: auto;">
+                        </div>
+                        <div style="margin-left: 50px">
+                            <label for="mobile" style="width: 56px; font-weight: bold;">Mobile</label>
+                            <input type="number" id="mobile" style="margin-left: 30px;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- customer info top right side  -->
+                <div style="padding: 10px; background-color: rgb(188, 152, 255); width: 40%;">
+                    <div>
+                        <label for="opBalance" style="font-weight: bold; width: 120px;">Op. Balance</label>
+                        <input type="number" id="opBlance">
+                    </div>
+                    <div>
+                        <label for="sale" style="font-weight: bold; width: 120px;">Sale</label>
+                        <input type="number" id="sale">
+                    </div>
+                    <div>
+                        <label for="received" style="font-weight: bold; width: 120px;">Received</label>
+                        <input type="number" id="received">
+                    </div>
+                    <div>
+                        <label for="balance" style="font-weight: bold; width: 120px;">Balance</label>
+                        <input type="number" id="balance">
+                    </div>
+                </div>
+            </div>
+            <!-- customer info top end  -->
+
+            <!-- customer info table start  -->
+            <table border="1" style="width: 100%;">
+                <thead style="text-align: center;">
+                    <tr>
+                        <th>Date</th>
+                        <th>Code</th>
+                        <th>Customer</th>
+                        <th>Phone</th>
+                        <th>Mobile</th>
+                        <th>Address</th>
+                        <th>Op_Balance</th>
+                        <th>Sale</th>
+                        <th>Received</th>
+                        <th>Balance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>6</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- customer info table end  -->
+
+            <div class="text-center pt-3" style="">
+                <label for="search" style="font-weight: bold;">Search</label>
+                <input type="text" id="search">
+            </div>
+
+            <!-- customer info bottom part -->
+            <div style="display: flex; justify-content: space-between; margin-top: 10px;">
+
+                <div>
+                    <button type="button" class="btn btn-primary" style="width: 200px;">Exit</button>
+                </div>
+
+                <div>
+                    <button type="button" class="btn btn-primary" style="width: 50px;">&#171;</button>
+                    <button type="button" class="btn btn-primary" style="width: 50px;">&#8249;</button>
+                    <button type="button" class="btn btn-primary" style="width: 50px;">&#8250;</button>
+                    <button type="button" class="btn btn-primary" style="width: 50px;">&#187;</button>
+                </div>
+                
+                <div>
+                    <button type="button" class="btn btn-primary">New</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                    <button type="button" class="btn btn-primary">Delete</button>
+                    <button type="button" class="btn btn-primary">Cancel</button>
+                    <button type="button" class="btn btn-primary">Update</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
